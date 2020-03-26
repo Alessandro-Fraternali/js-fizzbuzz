@@ -2,8 +2,16 @@
 
 // Ciclo che gestisce i vari passaggi
 for (var i = 1; i <= 100; i++)  {
+  // Stampa di FizzBuzz al posto di 15 e i suoi multipli
+  if (i % 15 === 0) {
+    console.log("FizzBuzz");
+  }
+  // Stampa di Buzz al posto di 5 e i suoi multipli
+  else if (i % 5 === 0) {
+    console.log("Buzz");
+  }
   // Stampa di Fizz al posto di 3 e i suoi multipli
-  if (i % 3 === 0) {
+  else if (i % 3 === 0) {
     console.log("Fizz");
   }
   // Stampa dei numeri da 1 a 100
@@ -11,7 +19,3 @@ for (var i = 1; i <= 100; i++)  {
     console.log(i);
   }
 }
-
-// Stampa di Buzz al posto di 5 e i suoi multipli
-
-// Stampa di FizzBuzz al posto di 15 e i suoi multipli
